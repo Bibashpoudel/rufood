@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginTop="-6dp"
+            android:progress="20"
+            android:id="@+id/progress_horizontal"
+            android:visibility="gone"
+            />
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mywebview"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout"
+            android:background="@color/lightgrey"
+            >
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:src="@drawable/no_connection"
+                android:layout_marginTop="195dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imgs" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="No Internet Connection"
+                android:layout_centerHorizontal="true"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_marginTop="155dp" />
+            <Button
+                android:layout_width="220dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape"
+                android:text="retry"
+                android:id="@+id/retrybutton"
+                android:textSize="29dp"
+                android:fontFamily="cursive"
+                android:textColor="@color/white"
+                android:layout_below="@+id/imgs"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+ </LinearLayout>
+
+
